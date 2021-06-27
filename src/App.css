@@ -1,38 +1,291 @@
-.App {
-  text-align: center;
-}
+body{
+  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-position: center center;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  top: 0;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 5vh;
+  background: rgba(0, 0, 0, 0.76);
   color: white;
 }
+.main-screen-logo{
+  display: flex;
 
-.App-link {
-  color: #61dafb;
-}
+  height: 747px;
+  width: 100%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
+.Logo{
+  position: absolute;
+  left: 20px;
+  display: flex;
+  padding-top: 2px;
+  max-height: 4.7vh;
+  height: 70px;
+  width: 60px;
+}
+.blog-head{
+  color: aliceblue;
+}
+.nav-links{
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0px;
+  width:40% ;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+}
+.Home{
+  align-content: center;
+  color: aliceblue;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  font-variant: small-caps;
+  
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-shadow: -2px 0 0 #fdff2a,
+    -4px 0 0 #df4a42,
+    2px 0 0 #91fcfe,
+    4px 0 0 #4405fc;
+  animation: blink 1s steps(4, start) infinite;
+  
+    
+ @keyframes blink
+   to
+     visibility: hidden;
+}
+.ABS{
+  align-content: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-align: center;
+  justify-content: space-around;
+  color: aliceblue;
+ 
+}
+.ATS{
+  font-family: "Times New Roman", Times, serif;
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: lighter;
+ 
+  word-spacing: 2;
+}
+.ABS2{
+  font-family: 'Times New Roman', Times, serif;
+  color: azure;
+  font-size: 30px;
+  text-align: center;
+  
+}
+.M1{
+  display: flex;
+  font-family: 'Abril Fatface', serif;
+  text-decoration: rgba(0, 0, 255, 0.61);
+  color: aliceblue;
+  font-size: 10rem;
+  text-shadow: black;
+  font-size: 20px;
+  
+
+}
+.drop{
+  position: absolute;
+  left: 10%;
+  color: aliceblue;
+  background: rgba(128, 128, 128, 0.253);
+  border-radius: 15px;
+  width: 80%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 10px;
+  margin-bottom: 3rem;
+}
+.contact-head{
+  color: aliceblue;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 0px 1 px 3 px rgba(0,0,0,.6);
+}
+.cop{
+  color: aliceblue;
+  text-shadow: 0px 1 px 3 px rgba(0,0,0,.6);
+  text-align: center;
+  font-size: 1.5rem;
+}
+.Contact-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+#contact-container{
+  width: 75%;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,.2) ;
+  -webkit-box-shadow: 0px 8px 33px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 33px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 8px 33px 0px rgba(0,0,0,0.75);
+   
+  }
+  .contact-info{
+    
+    background-color: #5904c2;
+    border-radius: 15px;
+    flex: 0 1 30%;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  h4{
+    font-size: 2vw;
+    font-weight: 500;
+    margin-top: 0;
+    
+  }
+  .conp{
+    position: absolute;
+    top: 15%;
+    color: rgba(255,255,.7);  
+    font-size: 1vw;
+    margin-bottom: 3%;
+  }
+  .icon-text{
+    display: flex;
+    justify-content: flex-start;
+    
+
+    flex: 0 2 60px;
+    align-items: center;
+    color:whitesmoke ;
+    
+    font-size: 2.2rem;
+    margin-right: 3rem;
+    margin-bottom: 6%;
+
+  }
+  .social-media{
+     display: flex;
+     width: 50%;
+     
+     justify-content: space-between;
+  }
+  .icon-circle{
+   flex: 0 1 40px;
+   height: 40px;
+   border-radius: 50%;
+   color: whitesmoke; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   transition: .3s all ease-in-out;
+   
+  }
+  .icon-circle:hover{
+    background: rgb(219, 15, 15); 
+  }
+  span{
+    font-size: 1.3rem;
+    font-weight: 300;
+
+  }
+  form{
+    
+    padding: 40px;
+    position: absolute;
+    top: 5.5%;
+    left: 450px;
+    width: 50%;
+
+  }
+  .col-2{
+    display: flex ;
+    flex-direction:row;
+    position: relative;
+    justify-content: space-evenly;
+    width: 100%;
+    flex: 0 0 100%;
+
+  }
+  .primary{
+    color: black;
+  }
+  .form-group{
+    display: flex;
+    justify-content: flex-start;
+    flex: 0 1  100%;
+    flex-direction: column;
+    padding-right: 30px;
+
+  }
+  input[type="text"],input[type="tel"],input[type="email"], textarea{
+    background: transparent;
+    border: none;
+    padding: 5%;
+    font-size: 1rem;
+    font-weight: 200;
+    cursor: pointer;
+    color: cornsilk;
+    border-bottom:2px solid rgba(255,255,255,.2);
+    transition: .3s all ease-in-out ;
+    margin-bottom: 2%;
+    
+    
+  }
+  input[type="text"],input[type="tel"],input[type="email"], textarea:focus{
+    border: none;
+    outline: none;
+    border-bottom:2px solid rgba(255,255,255,.2);
+  }
+  label{
+    font-size: 0.8rem;
+    margin-bottom: 1%;
+    color: rgba(255,255,255,.6);
+
+  }
+  #radio-buttons{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+    
+
+  }
+  label{
+    font-size: 0.9rem;
+  }
+  .radio-button{
+    margin-right: 50px;
+    align-items: flex-end;
+  }
+  button{
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    background: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+  }
+  

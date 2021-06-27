@@ -1,0 +1,114 @@
+
+
+.overlay{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15%;
+    
+    
+}
+.l{
+    color: cornsilk;
+   font-style: italic;
+   
+    height: auto;
+    overflow: hidden;
+    top:30%;
+    justify-content: center;
+    position: absolute;
+    left: 6px;
+    
+    text-align: center;
+    width: 40%;
+    
+  }
+.head{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 30px;
+   font-weight: bold;
+   
+}
+.typewriter {
+    color: #fff;
+    font-size: 1rem;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid whitesmoke; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing 5s steps(16) infinite;
+  }
+  @keyframes typing {
+    0%,90%,100%{
+      width: 0px;
+    }
+    30%,60%{
+      width: 200px;
+    }
+  }
+.r{
+    
+    position: absolute;
+    top:30%;
+    justify-items: center;
+    right: 2px;
+    height:auto;
+    text-align: center;
+    width: 50%;
+    
+  }
+  .item1{
+    position: absolute;
+    top:30%;
+    height: 50px;
+    width: 50px;
+    justify-items: center;
+    right: 250px;
+    height:auto;
+    text-align: center;
+    width: 50%;
+    
+  }
+  .text{
+    top: 89%;
+      left: 40%;
+  }
+.arrow{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #06ABFF;
+    border-left: 5px solid #06ABFF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+
+}
+.arrow span:nth-child(2){
+    animation-delay: .2s ;
+}
+.arrow span:nth-child(3){
+    animation-delay: .4s ;
+}
+@keyframes scroll{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg)translate(20px, 20px);
+    }
+    50%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg)translate(-20px, -20px);
+    }
+}

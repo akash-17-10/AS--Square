@@ -1,0 +1,233 @@
+.Home1{
+    align-content: center;
+    color: aliceblue;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    font-variant: small-caps;
+    
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a,
+      -4px 0 0 #df4a42,
+      2px 0 0 #91fcfe,
+      4px 0 0 #4405fc;
+    animation: blink .5s steps(4, start) infinite;
+    margin-bottom: 2rem;
+    
+}
+   @keyframes blink{
+     to{
+       visibility: hidden;
+  }} 
+  
+.main{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.home-container1,.home-container2,.home-container3,.home-container4,.home-container5,.home-container6{
+  position:absolute;
+    top: 22%;
+    left: 8%;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 25px;
+    width: 25%;
+    height: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    animation: ease;
+    cursor: pointer;
+    display:block;
+}
+.home-container2{
+  left: 38%;
+  margin-bottom: 5rem;
+}
+.home-container3{
+  left: 68%;
+  margin-bottom: 5rem;
+}
+.home-container4{
+  top: 80%;
+  margin-bottom: 5rem;
+  
+}
+.home-container5{
+  top: 80%;
+  left: 38%;
+}
+.home-container6{
+  top: 80%;
+  left: 68%;
+}
+.home-container1:hover,.home-container2:hover,.home-container3:hover,.home-container4:hover,.home-container5:hover,.home-container6:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px 0px;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    size: inherit;
+    overflow: hidden;
+    height:50%;
+    margin-bottom: 2%;
+}
+.home-content{
+  margin: 1%;
+
+}
+.home-title{
+  margin-bottom: 3px;
+}
+.title{
+  margin-bottom: .5%;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+}
+.btn{
+  left: 40%;
+  width: 20%;
+  height: 12%;
+  overflow:hidden;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  position: absolute;
+  bottom: 0px; 
+}
+.btn:hover{
+  background: #21ebff;
+  color: radial-gradient(ellipse at bottom, #0b0f14 0%, #090a0f 100%);
+  box-shadow: 0 0 5px #21ebff;
+  transition-delay: 0.5s;
+}
+
+
+
+.btlink{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  color:rgb(255, 255, 255) ;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btlink:hover{
+  color: radial-gradient(ellipse at bottom, #0b0f14 0%, #090a0f 100%);
+
+  
+}
+.btlink::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #21ebff;
+  border-left: 2px solid #21ebff;
+  transition: 0.5s;
+}
+.btlink:hover::before{
+  width: 100%;
+  height: 100%;
+}
+.btlink::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #21ebff;
+  border-right: 2px solid #21ebff;
+  transition: 0.5s;
+}
+.btlink:hover::after{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  margin-top: 0.5rem;
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 5px;
+  font-size: 1.3vw;
+  justify-content: space-around;
+  
+}
+.body{
+  position: absolute;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+
+#scrollpath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+}
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top,#008aff,#00ffe7);
+  animation: bar 5s linear infinite;
+}
+
+@keyframes bar{
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#008aff,#00ffe7);
+filter: blur(10px);
+}
+#progressbar::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top,#008aff,#00ffe7);
+filter: blur(30px);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 25px;
+}
